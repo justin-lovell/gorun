@@ -1,0 +1,10 @@
+[ignore]
+.*/dist
+.*/node_modules
+.*/node_modules/*/node_modules
+.*/coverage
+
+
+[options]
+all=true
+module.ignore_non_literal_requires=true
