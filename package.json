@@ -8,7 +8,8 @@
     "test:mocha": "mocha --compilers js:babel-core/register",
     "flow:install": "flow-typed install",
     "flow:check": "flow check",
-    "push": "npm run build && cd dist && npm publish",
+    "prepublish": "npm run build",
+    "push": "cd dist && npm publish",
     "build": "babel-node lib/bin/gorun-exec lib/build"
   },
   "repository": {
