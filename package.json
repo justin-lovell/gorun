@@ -1,6 +1,6 @@
 {
   "name": "gorun",
-  "version": "0.2.1",
+  "version": "0.4.0",
   "description": "Run commands as bin",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,7 @@
     "test:mocha": "mocha --compilers js:babel-core/register",
     "flow:install": "flow-typed install",
     "flow:check": "flow check",
-    "prepublish": "npm run build",
-    "push": "cd dist && npm publish",
+    "push": "npm run build && npm publish dist",
     "build": "babel-node ./lib/bin/gorun-exec ./lib/build"
   },
   "repository": {
@@ -29,11 +28,8 @@
   "bugs": {
     "url": "https://github.com/justin-lovell/gorun/issues"
   },
-  "files": [
-    "dist/*"
-  ],
   "bin": {
-    "gorun-exec": "./dist/bin/gorun-exec.js"
+    "gorun-exec": "./bin/gorun-exec.js"
   },
   "homepage": "https://github.com/justin-lovell/gorun#readme",
   "dependencies": {
