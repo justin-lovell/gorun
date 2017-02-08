@@ -1,6 +1,6 @@
 {
   "name": "gorun",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Run commands as bin",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,12 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/justin-lovell/gorun/issues"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "bin": {
+    "gorun-exec": "./dist/bin/gorun-exec.js"
   },
   "homepage": "https://github.com/justin-lovell/gorun#readme",
   "dependencies": {
