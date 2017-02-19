@@ -1,6 +1,6 @@
 {
   "name": "gorun",
-  "version": "0.5.1",
+  "version": "0.5.3",
   "description": "Run commands as bin",
   "main": "index.js",
   "scripts": {
